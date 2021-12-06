@@ -2,6 +2,8 @@
 
 https://ditazan.github.io/webdev_portfolio/
 
+<img src="./assets/images/Screenshot (10).png">
+
 ## Languages Utilized :
 - HTML
 - CSS
