@@ -115,21 +115,23 @@ header nav ul li a {
 
 .projects {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 60px 200px 30px 200px;
-  align-items: center;
   align-content: space-around;
-  gap: 10px 20px;
+  gap: 10px 10px;
+
 }
+
 .proj {
-  width: 200px;
   overflow: hidden;
   flex: 0 1 auto;
+  margin: auto;
+  
 }
 
 .large {
-  flex: 4 0 auto;
+  flex: 1 0 100%;
 }
 
 .proj:hover {
@@ -137,8 +139,8 @@ header nav ul li a {
 }
 
 .proj-img-container {
-  height: 200px;
-  width: 200px;
+  height: 100%;
+  width: 300px;
   overflow: hidden;
 }
 
@@ -236,7 +238,7 @@ footer {
   }
 
   header nav ul {
-    margin-top: 20px;
+    margin-bottom: 10px;
     width: 100%;
     justify-content: center;
   }
@@ -245,18 +247,22 @@ footer {
     font-size: 20px;
   }
 
-  footer h2, footer div {
-    text-align: center;
-    width: 100%;
-  }
-
 .hero{
-  height: 50vh;
+  height: 10vh;
 }
 
-  
+.section-title{
+  font-size: 40px;
+}
+
+  .projects{
+    padding: 50px 100px 20px 100px;
+    /* gap: 0px 20px; */
+  }
+
   .proj {
-    flex: 1 0 0;
+    flex: 1;
+  /* margin: 15px 0px; */
   }
   .proj-img-container {
     height: 100%;
@@ -264,13 +270,67 @@ footer {
   }
   
   .large{
-    flex: 1 100%;
+    flex: 1 0 100%;
+  }
+
+  .aboutMe{
+    padding: 20px 50px 10px 50px;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .contact-form{
+    width: 80%;
+    padding: 20px;
   }
 
 }
 
 @media screen and (max-width: 768px) {
+  .hero{
+    height:12vh;
+  }
+  
+  .section-title{
+    font-size: 30px;
+    margin-top: 15px;
+  }
+
+  .aboutMe {
+    flex-direction: column-reverse;
+    padding: 10px 50px;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 575px) {
+.section-title{
+  padding: 0px 40px 0px 20px;
+  font-size: 25px;
+}
+
+.projects{
+
+  padding: 10px 70px 0px 70px;
+}
+
+.proj{
+  flex: 0 100%;
+  /* margin: 20px; */
+}
+
+.proj img{
+  height: 150px;
+  width: 100%;
+  object-fit:cover;
+  overflow: hidden;
+}
+
+.contact-form{
+  padding-top: 40px;;
+}
+
 }
