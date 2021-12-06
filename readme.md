@@ -2,7 +2,7 @@
 
 https://ditazan.github.io/webdev_portfolio/
 
-<img src="./assets/images/Screenshot (10).png">
+<img src="./assets/images/Screenshot 2021-12-05 233120.png">
 
 ## Languages Utilized :
 - HTML
