@@ -26,13 +26,15 @@ header {
 }
 
 header h1 {
-  font-family: 'Space Mono', monospace;
+  font-family: "Cormorant Infant", serif;
   font-style: italic;
+  font-weight: 100;
   font-size: 36px;
   color: #ffffff;
   line-height: 90%;
   margin: 0;
   justify-self: flex-start;
+  padding: 3px 0 0 15px;
 }
 
 header a {
@@ -70,7 +72,7 @@ header nav ul li a {
   z-index: -1;
   pointer-events: none;
   overflow: hidden;
-  border-bottom: 3px  normal white;
+  border-bottom: 3px normal white;
 }
 
 .heroBg iframe {
@@ -85,9 +87,8 @@ header nav ul li a {
 }
 
 .gradient {
-
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   background-image: linear-gradient(
     to bottom,
@@ -115,7 +116,7 @@ header nav ul li a {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
- padding: 60px 200px 30px 200px;
+  padding: 60px 200px 30px 200px;
   align-items: center;
   align-content: space-around;
   gap: 10px 20px;
@@ -158,11 +159,9 @@ header nav ul li a {
   color: #ffffff9c;
 }
 
-
-
-.white{
+.white {
   background-color: white;
-  color:black;
+  color: black;
 }
 .aboutMe {
   padding: 30px 200px 0px 200px;
@@ -181,6 +180,23 @@ header nav ul li a {
 .aboutMe img {
   width: 40%;
   height: 40%;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  /* https://www.w3schools.com/howto/howto_css_glowing_text.asp - base for glow animation */
+}
+
+@-webkit-keyframes glow {
+  from {
+    -webkit-filter: drop-shadow(1px 1px 1px  #ffffff)
+      drop-shadow(2px 2px 2px  #deffa2) drop-shadow(3px 3px 3px  #33ff00);
+    filter: drop-shadow(1px 1px 1px  #ffffff)
+      drop-shadow(2px 2px 2px  #deffa2) drop-shadow(3px 3px 3px  #33ff00);
+    /* https://stackoverflow.com/questions/3186688/drop-shadow-for-png-image-in-css - how to apply a drop shadow to a png */
+    /* https://stackoverflow.com/questions/34931463/how-to-make-multiple-drop-shadow - layering of drop shadows to create a more dimmensional glow*/
+  }
+
+  to {
+  }
 }
 
 .about-me p {
@@ -190,13 +206,10 @@ header nav ul li a {
 .contact {
 }
 
-
 .contact-form {
   width: 500px;
   margin: 0 auto;
 }
-
-
 
 .contact-form input,
 .contact-form text-area {
@@ -220,7 +233,7 @@ header nav ul li a {
   font-size: 16px;
 }
 
-footer{
+footer {
   display: flex;
   justify-content: flex-end;
   padding: 0px 10px 10px;
